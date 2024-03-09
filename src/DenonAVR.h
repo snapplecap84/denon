@@ -1,7 +1,7 @@
 #ifndef DENONAVR_H
 #define DENONAVR_H
 
-#ifdef ESP32
+#ifdef ESP8266
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <HardwareSerial.h>
