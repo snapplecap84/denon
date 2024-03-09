@@ -3,7 +3,7 @@
 bool DENON_AVR::begin() {
   _conType = conType::TELNET;
   String toMatch = "Denon";
-  if (!MDNS.begin("ESP32")) {
+  if (!MDNS.begin("ESP8266")) {
     return false;
   }
   int n = MDNS.queryService("http", "tcp");
